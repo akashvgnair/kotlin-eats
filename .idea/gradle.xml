@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleHome" value="" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/delivery-application" />
+            <option value="$PROJECT_DIR$/delivery-cli" />
+            <option value="$PROJECT_DIR$/delivery-domain" />
+            <option value="$PROJECT_DIR$/delivery-infrastructure" />
+            <option value="$PROJECT_DIR$/kitchen-application" />
+            <option value="$PROJECT_DIR$/kitchen-cli" />
+            <option value="$PROJECT_DIR$/kitchen-domain" />
+            <option value="$PROJECT_DIR$/kitchen-infrastructure" />
+            <option value="$PROJECT_DIR$/ordering-application" />
+            <option value="$PROJECT_DIR$/ordering-cli" />
+            <option value="$PROJECT_DIR$/ordering-domain" />
+            <option value="$PROJECT_DIR$/ordering-infrastructure" />
+            <option value="$PROJECT_DIR$/payment-application" />
+            <option value="$PROJECT_DIR$/payment-cli" />
+            <option value="$PROJECT_DIR$/payment-domain" />
+            <option value="$PROJECT_DIR$/payment-infrastructure" />
+            <option value="$PROJECT_DIR$/restaurant-application" />
+            <option value="$PROJECT_DIR$/restaurant-cli" />
+            <option value="$PROJECT_DIR$/restaurant-domain" />
+            <option value="$PROJECT_DIR$/restaurant-infrastructure" />
+            <option value="$PROJECT_DIR$/shared-kernel" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>
