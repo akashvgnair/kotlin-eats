@@ -4,7 +4,7 @@ import java.util.UUID
 import java.time.Instant
 
 abstract class DomainEvent(val eventId: UUID = UUID.randomUUID()) {
-    abstract val occurredOn: Instant
+    open val occurredOn: Instant = Instant.now()
 
     override fun equals(other: Any?): Boolean {
         if (this === other) return true
