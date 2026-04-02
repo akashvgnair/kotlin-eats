@@ -34,8 +34,10 @@ class CreateRestaurantUseCase(
                 operatingHours = operatingHours
             )
 
+            val menu = Menu.from(restaurant.id)
+
             restaurantRepository.save(restaurant)
-            menuRepository.save(Menu.from(restaurant.id))
+            menuRepository.save(menu)
             eventBus.publishAll(restaurant.clearEvents())
             return Result.Success(restaurant)
 
