@@ -39,6 +39,9 @@ class MenuItem private constructor(
         require(newPrice > Money.fromZero(price.currency)) {
             PRICE_POSITIVE
         }
+        require(newPrice.currency == price.currency) {
+            PRICE_CURRENCY_SAME
+        }
         price = newPrice
     }
 
@@ -54,6 +57,7 @@ class MenuItem private constructor(
         private const val NAME_NOT_BLANK = "Name of the menu item cannot be blank"
         private const val CATEGORY_NOT_BLANK = "Category of the menu item cannot be blank"
         private const val PRICE_POSITIVE = "Price of the menu item should be positive"
+        private const val PRICE_CURRENCY_SAME = "Updated price of the menu item should have same currency "
         fun from(name: String, category: String, price: Money): MenuItem {
             val menuItemId = MenuItemId()
             require(name.isNotBlank()) {
