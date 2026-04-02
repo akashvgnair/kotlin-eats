@@ -14,7 +14,7 @@ import org.junit.jupiter.api.Test
 
 class InMemoryMenuRepositoryTest {
 
-    private val menuRepository = InMemoryMenuRepository
+    private val menuRepository = InMemoryMenuRepository()
     private val restaurantId = RestaurantId()
 
     @BeforeEach

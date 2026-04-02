@@ -15,7 +15,7 @@ import java.time.LocalTime
 
 class InMemoryRestaurantRepositoryTest {
 
-    private val repository = InMemoryRestaurantRepository
+    private val repository = InMemoryRestaurantRepository()
 
     private fun createRestaurant(name: String = "Pizza Palace"): Restaurant {
         return Restaurant.from(

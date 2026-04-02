@@ -1,11 +1,11 @@
-package com.akashvgnair.kotlinEats.persistance
+package com.akashvgnair.kotlinEats.usecase.fixtures
 
 import com.akashvgnair.kotlinEats.models.Menu
 import com.akashvgnair.kotlinEats.models.MenuId
 import com.akashvgnair.kotlinEats.models.RestaurantId
 import com.akashvgnair.kotlinEats.ports.MenuRepository
 
-class InMemoryMenuRepository : MenuRepository {
+class MockMenuRepository() : MenuRepository {
     private val menuMap: MutableMap<MenuId, Menu> = mutableMapOf()
 
     override fun findByRestaurantId(restaurantId: RestaurantId): Menu? {
